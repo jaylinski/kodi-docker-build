@@ -47,8 +47,15 @@ The first build will take a few hours.
 You should find a `kodi-x11` file in the `build` folder.
 
 Execute it to test your build. If it does not work because
-of missing libraries, start a Ubuntu 20.04 VM and install
-all Kodi build dependencies.
+of missing libraries, install Kodi via `apt`:
+
+```sh
+sudo add-apt-repository ppa:team-xbmc/xbmc-nightly
+sudo apt-get update
+sudo apt-get install kodi
+```
+
+This will install all missing dependencies.
 
 ## Clean up
 
