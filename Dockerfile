@@ -11,7 +11,7 @@ VOLUME /kodi/build
 
 # Install build dependencies
 RUN apt-get update; \
-    apt-get install --assume-yes software-properties-common; \
+    apt-get install --assume-yes ccache software-properties-common; \
     add-apt-repository --enable-source ppa:team-xbmc/xbmc-nightly; \
     apt-get build-dep --assume-yes kodi;
 

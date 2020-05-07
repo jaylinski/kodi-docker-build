@@ -15,6 +15,8 @@ Kodi and don't want to litter your OS with Kodi build dependencies.
 docker build -t kodi-docker-build .
 ```
 
+> You can do a fresh build by adding the `--no-cache` flag.
+
 ### Link source code
 
 Create a symlink to your Kodi source:
